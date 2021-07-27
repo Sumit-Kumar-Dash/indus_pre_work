@@ -1,0 +1,9 @@
+1. As per the problem statement, column "scholarshipAvailed" is the target variable and this column has near to 99% null values . So this dataset is not fully cmpleted for the model building . 
+   But in this solution , i am imputing this column for model building , which may lead to a bias model .
+	
+2. As we have only one csv file we are takig same file for model training and final pediction with assumption that data are validated and transformed .
+
+3. We can push this model to any of the cloud as per the availability .
+   In this problem , pushing the model to Heroku cloud and using Github for VCS .  
+
+4. The csv file mentioned in this model building with different name for model training and prediction , are same as the csv file provided in the Problem Statement .

@@ -1,0 +1,32 @@
+To deploy on Heroku Cloud ::
+
+
+1> create the enviornment 
+
+2> Create the requirements.txt file
+
+pip freeze>requirements.txt
+
+
+3> Create a empty "Procfile"
+
+
+web: gunicorn main:app
+
+
+4>link github repo
+
+git init
+git add .
+git commit -m "commit message"
+git branch -M main
+git remote add origin <git hub url for your repo>
+git push -u origin main
+
+
+5>Now login to heroku and push the code :
+
+heroku login -i
+heroku git:clone -a app-name
+cd app-name
+git push heroku main
